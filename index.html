@@ -222,7 +222,10 @@
   </div>
 
   <script>
-    const RSS_URL = "https://cdn.mysitemapgenerator.com/shareapi/rss/24111689887";
+    const RAW_RSS_URL = "https://cdn.mysitemapgenerator.com/shareapi/rss/24111689887";
+const RSS_URL =
+  "https://api.allorigins.win/raw?url=" + encodeURIComponent(RAW_RSS_URL);
+
 
     const feedTitleEl = document.getElementById("feedTitle");
     const feedCountEl = document.getElementById("feedCount");
